@@ -31,6 +31,7 @@
     }
   ],
   "result": {
-    "item": "infinite_resources:lapis_ore"
+    "count": 1,
+    "id": "infinite_resources:lapis_ore"
   }
 }

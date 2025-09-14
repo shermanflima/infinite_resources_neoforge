@@ -15,6 +15,7 @@
     " O "
   ],
   "result": {
-    "item": "infinite_resources:tool"
+    "count": 1,
+    "id": "infinite_resources:tool"
   }
 }

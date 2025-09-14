@@ -31,6 +31,7 @@
     }
   ],
   "result": {
-    "item": "infinite_resources:gold_ore"
+    "count": 1,
+    "id": "infinite_resources:gold_ore"
   }
 }
