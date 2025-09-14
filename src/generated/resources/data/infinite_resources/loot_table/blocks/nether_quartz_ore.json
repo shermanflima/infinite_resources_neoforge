@@ -15,7 +15,7 @@
                   "predicates": {
                     "minecraft:enchantments": [
                       {
-                        "enchantment": "minecraft:silk_touch",
+                        "enchantments": "minecraft:silk_touch",
                         "levels": {
                           "min": 1
                         }
@@ -26,7 +26,7 @@
               }
             }
           ],
-          "name": "minecraft:coal"
+          "name": "minecraft:quartz"
         }
       ],
       "functions": [
@@ -50,7 +50,7 @@
                 "predicates": {
                   "minecraft:enchantments": [
                     {
-                      "enchantment": "minecraft:silk_touch",
+                      "enchantments": "minecraft:silk_touch",
                       "levels": {
                         "min": 1
                       }
@@ -60,11 +60,11 @@
               }
             }
           ],
-          "name": "minecraft:coal_ore"
+          "name": "minecraft:nether_quartz_ore"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "infinite_resources:blocks/coal_ore"
+  "random_sequence": "infinite_resources:blocks/nether_quartz_ore"
 }

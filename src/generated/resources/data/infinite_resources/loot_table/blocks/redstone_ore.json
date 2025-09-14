@@ -16,7 +16,7 @@
                     "predicates": {
                       "minecraft:enchantments": [
                         {
-                          "enchantment": "minecraft:silk_touch",
+                          "enchantments": "minecraft:silk_touch",
                           "levels": {
                             "min": 1
                           }
@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "minecraft:lapis_ore"
+              "name": "minecraft:redstone_ore"
             },
             {
               "type": "minecraft:item",
@@ -35,21 +35,24 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 9.0,
+                    "max": 5.0,
                     "min": 4.0
                   },
                   "function": "minecraft:set_count"
                 },
                 {
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
+                  "formula": "minecraft:uniform_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "bonusMultiplier": 1
+                  }
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:lapis_lazuli"
+              "name": "minecraft:redstone"
             }
           ]
         }
@@ -57,5 +60,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "infinite_resources:blocks/lapis_ore"
+  "random_sequence": "infinite_resources:blocks/redstone_ore"
 }

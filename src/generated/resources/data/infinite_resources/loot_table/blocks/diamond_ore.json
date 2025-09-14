@@ -15,7 +15,7 @@
                   "predicates": {
                     "minecraft:enchantments": [
                       {
-                        "enchantment": "minecraft:silk_touch",
+                        "enchantments": "minecraft:silk_touch",
                         "levels": {
                           "min": 1
                         }
@@ -26,7 +26,7 @@
               }
             }
           ],
-          "name": "minecraft:raw_iron"
+          "name": "minecraft:diamond"
         }
       ],
       "functions": [
@@ -50,7 +50,7 @@
                 "predicates": {
                   "minecraft:enchantments": [
                     {
-                      "enchantment": "minecraft:silk_touch",
+                      "enchantments": "minecraft:silk_touch",
                       "levels": {
                         "min": 1
                       }
@@ -60,11 +60,11 @@
               }
             }
           ],
-          "name": "minecraft:iron_ore"
+          "name": "minecraft:diamond_ore"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "infinite_resources:blocks/iron_ore"
+  "random_sequence": "infinite_resources:blocks/diamond_ore"
 }
