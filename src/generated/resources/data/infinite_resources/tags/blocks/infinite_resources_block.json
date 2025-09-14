@@ -1,0 +1,16 @@
+{
+  "values": [
+    "infinite_resources:ancient_debris",
+    "infinite_resources:budding_amethyst",
+    "infinite_resources:coal_ore",
+    "infinite_resources:copper_ore",
+    "infinite_resources:diamond_ore",
+    "infinite_resources:emerald_ore",
+    "infinite_resources:glowstone",
+    "infinite_resources:gold_ore",
+    "infinite_resources:iron_ore",
+    "infinite_resources:lapis_ore",
+    "infinite_resources:nether_quartz_ore",
+    "infinite_resources:redstone_ore"
+  ]
+}
