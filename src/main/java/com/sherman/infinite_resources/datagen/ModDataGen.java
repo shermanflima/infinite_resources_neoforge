@@ -12,7 +12,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class ModDataGen {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
@@ -31,8 +31,8 @@ public class ModDataGen {
 
         if (event.includeServer()) {
             generator.addProvider(true, new LootTableProvider(packOutput, Set.of(),
-                    List.of(new LootTableProvider.SubProviderEntry(ModBlockLootSubProvider::new, LootContextParamSets.BLOCK))));
-            generator.addProvider(true, new ModRecipeProvider(packOutput));
+                    List.of(new LootTableProvider.SubProviderEntry(ModBlockLootSubProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+            generator.addProvider(true, new ModRecipeProvider(packOutput, lookupProvider));
             generator.addProvider(true, new ModBlockTagProvider(packOutput, lookupProvider, helper));
         }
         if (event.includeClient()) {

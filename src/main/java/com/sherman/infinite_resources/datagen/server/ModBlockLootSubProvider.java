@@ -53,7 +53,7 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
                         LootPool.lootPool()
                                 .setRolls(ConstantValue.exactly(1.0F))
                                 .add(LootItem.lootTableItem(drop))
-                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)));
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.FORTUNE)));
     }
 
     protected LootTable.Builder createModOreDrop(ItemLike withSilkTouch, ItemLike drop){
@@ -62,7 +62,7 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
                         LootPool.lootPool()
                                 .setRolls(ConstantValue.exactly(1.0F))
                                 .add(LootItem.lootTableItem(drop).when(HAS_NO_SILK_TOUCH))
-                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.FORTUNE)))
                 .withPool(
                         LootPool.lootPool()
                                 .setRolls(ConstantValue.exactly(1.0F))

@@ -14,7 +14,6 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -51,8 +50,8 @@ public class InfiniteTool extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, TooltipFlag isAdvanced) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         tooltipComponents.add(Component.translatable("tooltip." + MODID + ".tool"));
-        super.appendHoverText(stack, level, tooltipComponents, isAdvanced);
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }
