@@ -2,33 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    }
+    "minecraft:glowstone",
+    "minecraft:glowstone",
+    "minecraft:glowstone",
+    "minecraft:glowstone",
+    "minecraft:glowstone",
+    "minecraft:glowstone",
+    "minecraft:glowstone",
+    "minecraft:glowstone",
+    "minecraft:glowstone"
   ],
   "result": {
     "count": 1,

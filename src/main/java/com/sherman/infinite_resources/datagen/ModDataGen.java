@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class ModDataGen {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
@@ -32,7 +32,7 @@ public class ModDataGen {
         if (event.includeServer()) {
             generator.addProvider(true, new LootTableProvider(packOutput, Set.of(),
                     List.of(new LootTableProvider.SubProviderEntry(ModBlockLootSubProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
-            generator.addProvider(true, new ModRecipeProvider(packOutput, lookupProvider));
+            generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
             generator.addProvider(true, new ModBlockTagProvider(packOutput, lookupProvider, helper));
         }
         if (event.includeClient()) {

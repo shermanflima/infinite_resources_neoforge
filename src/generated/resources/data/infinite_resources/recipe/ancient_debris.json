@@ -2,33 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    },
-    {
-      "item": "minecraft:ancient_debris"
-    }
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris",
+    "minecraft:ancient_debris"
   ],
   "result": {
     "count": 1,

@@ -21,8 +21,8 @@ import static com.sherman.infinite_resources.InfiniteResources.MODID;
 
 public class InfiniteTool extends Item {
 
-    public InfiniteTool() {
-        super(new Item.Properties().stacksTo(1));
+    public InfiniteTool(Properties properties) {
+        super(properties.stacksTo(1));
     }
 
     private boolean isValidBlock(BlockState block){
@@ -50,8 +50,9 @@ public class InfiniteTool extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
         tooltipComponents.add(Component.translatable("tooltip." + MODID + ".tool"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }
+
