@@ -27,7 +27,7 @@ public class InfiniteTool extends Item {
     }
 
     private boolean isValidBlock(BlockState block){
-        return block.is(ModTags.Blocks.INFINITY_BLOCK);
+        return block.is(ModTags.Blocks.INFINITE_RESOURCES_BLOCK);
     }
 
     @Override
