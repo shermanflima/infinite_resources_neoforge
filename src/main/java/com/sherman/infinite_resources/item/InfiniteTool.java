@@ -55,11 +55,5 @@ public class InfiniteTool extends Item {
         tooltipAdder.accept(Component.translatable("tooltip." + MODID + ".tool"));
         super.appendHoverText(stack, context, tooltipDisplay, tooltipAdder, flag);
     }
-    //
-//    @Override
-//    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-//        tooltipComponents.add(Component.translatable("tooltip." + MODID + ".tool"));
-//        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-//    }
 }
 
