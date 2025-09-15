@@ -22,9 +22,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.@NotNull Provider provider) {
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .addTag(ModTags.Blocks.INFINITY_BLOCK);
+                .addTag(ModTags.Blocks.INFINITE_RESOURCES_BLOCK);
 
-        tag(ModTags.Blocks.INFINITY_BLOCK)
+        tag(ModTags.Blocks.INFINITE_RESOURCES_BLOCK)
                 .add(ModRegistry.ANCIENT_DEBRIS.get())
                 .add(ModRegistry.BUDDING_AMETHYST.get())
                 .add(ModRegistry.COAL_ORE.get())
